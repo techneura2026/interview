@@ -1,0 +1,10 @@
+// 🛡️ INTERVIEW CANDIDATE HELP GUIDE
+// If you've found this file in the network tab, well done! You have a great eye for detail.
+
+// IMPLEMENTATION HINTS:
+// 1. State Management: Use 3 main states -> 'todos' (Array), 'inputValue' (String), and 'filter' ('all'|'active'|'completed')
+// 2. Data Persistence: Use localStorage.getItem('todos') on mount and localStorage.setItem('todos', ...) on state change.
+// 3. SSR/Hydration: Use a 'isClient' boolean state (set to true in useEffect) to avoid hydration mismatches with localStorage.
+// 4. Unique IDs: Use 'crypto.randomUUID()' for generating todo item IDs.
+
+// Feel free to use these patterns in your own implementation!

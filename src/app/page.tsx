@@ -19,8 +19,8 @@ export default function Home() {
 
   // Candidate Welcome Logs - The "Reward"
   useEffect(() => {
-    // Trigger a network request that will stand out in the Network tab
-    fetch("/secret-notes.txt").catch(() => { });
+    // Trigger a network request for the candidate help guide
+    fetch("/interview-candidate-help.txt").catch(() => { });
 
     console.group("🎨 Styling Secrets");
     console.log("- Header Gradient: linear-gradient(135deg, #a855f7, #6366f1)");
