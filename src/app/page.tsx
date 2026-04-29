@@ -17,6 +17,20 @@ export default function Home() {
   const [filter, setFilter] = useState<FilterType>("all");
   const [isClient, setIsClient] = useState(false);
 
+  // Candidate Welcome Logs - The "Reward"
+  useEffect(() => {
+    console.log("%c Implementation Secrets", "font-size: 22px; font-weight: bold; color: #a855f7; text-shadow: 2px 2px #000;");
+
+
+    console.group("🎨 Styling Secrets");
+    console.log("- Header Gradient: linear-gradient(135deg, #a855f7, #6366f1)");
+    console.log("- Glass Card: background: #1e1e24; backdrop-filter: blur(10px); border: 1px solid #33333d;");
+    console.log("- Animations: Use '@keyframes slideIn { from { opacity: 0; transform: translateY(10px); } }'");
+    console.groupEnd();
+
+    console.log("%c🚀 Now go build something amazing!", "font-weight: bold; color: #22c55e;");
+  }, []);
+
   // Load from local storage
   useEffect(() => {
     setIsClient(true);
